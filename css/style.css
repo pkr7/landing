@@ -1,6 +1,12 @@
 * {
   scroll-behavior: smooth;
 }
+body {
+  background-image: url('../img/Foto\ Pilihan/Cover /BG.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 .navbar {
   font-weight: bold;
   font-size: large;
@@ -183,6 +189,30 @@
     overflow: auto;
      margin-bottom: 10vh;
 }
+.poto div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.poto img{
+  margin: auto;
+}
+
+.popup{
+  font-style: system-ui;
+  padding-top: 15px;
+  line-height: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal-content  {
+  transform: translateY(30%);
+  background-color: rgba(55, 163, 252, 0.2);
+  backdrop-filter: blur(7px);
+  color: aliceblue
+}
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
 
 /* Responsive */
 /* HP */
@@ -205,6 +235,9 @@
 
   .poto{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .poto div {
+    flex-direction: column;
   }
 }
 /* Tablet */
