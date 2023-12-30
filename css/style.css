@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .navbar {
   font-weight: bold;
   font-size: large;
@@ -46,7 +49,7 @@
 .profile-singkat {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(var(--bs-primary-rgb));
+  background-color: white;
   border-radius: 20px;
   width: 100%;
   height: max-content;
@@ -157,6 +160,22 @@
   margin-top: 10px;
 }
 
+#poto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#poto div img{
+  scale: 1;
+  opacity: 0.5;
+}
+#poto div img:hover{
+  border: 1px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
 /* Responsive */
 /* HP */
 @media screen and (max-width: 600px) {
@@ -170,6 +189,10 @@
   }
   .foto p {
     opacity: 1;
+  }
+  .proker {
+    position: absolute;
+    opacity: 0 ;
   }
 }
 /* Tablet */
