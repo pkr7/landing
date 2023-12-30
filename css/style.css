@@ -175,6 +175,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
+.poto{
+  display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-height: 300px;
+    overflow: auto;
+     margin-bottom: 10vh;
+}
 
 /* Responsive */
 /* HP */
@@ -193,6 +201,10 @@
   .proker {
     position: absolute;
     opacity: 0 ;
+  }
+
+  .poto{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* Tablet */
