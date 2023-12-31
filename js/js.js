@@ -21,3 +21,7 @@ const tilt = $('.js-tilt').tilt();
         const element = $(this).closest('.js-parent').find('.js-tilt');
         element.tilt.reset.call(element);
     });
+    $('.js-tilt').tilt({
+      glare: true,
+      maxGlare: .5
+    })
