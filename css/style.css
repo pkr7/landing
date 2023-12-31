@@ -251,8 +251,22 @@ body {
 
   .fotos {
     padding-top: 2vh;
+    
   }
   .foto p {
     opacity: 1;
   }
+  
+}
+
+/* hp agak besar */
+@media screen and (min-width: 450px) and (max-width: 756px){
+  .card__img  {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  
+}
+  
 }
