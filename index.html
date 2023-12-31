@@ -48,14 +48,16 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Tah Gening" aria-label="Search" />
+            <input style="position: relative;" class="form-control me-2" type="search" placeholder="Tah Gening" aria-label="Search" />
             <button class="btn btn-info text-light" type="submit">🔍</button>
           </form>
         </div>
       </div>
     </nav>
     <!-- home -->
-    <div class="utama container">
+    
+    <div class="bungkus container" style="position:relative ">
+    <div class="utama container" style="position: relative;">
       <div class="home container-xxl" id="home">
         <div class="container-fluid">
           <img src="./img/landig 2.png" alt="" />
@@ -225,7 +227,7 @@
                   <h3 class="card__name">Sosialisasi</h3>
                   <p class="card__description"></p>
 
-                  <a href="#sosialisasi" class="card__button">Lihat Disini!</a>
+                  <a href="#qwerty" class="card__button">Lihat Disini!</a>
                 </div>
               </article>
 
@@ -287,23 +289,54 @@
         </div>
       </section>
       <!-- Akhir Link -->
-      <!-- slide photo -->
-      <div class="container-md" id="galeri">
-        <center><h1>Foto Kegiatan</h1></center>
-        <div class="container-sm" id="poto">
-          <div class="poto" style="" id="sosialisasi">
-            <div data-tilt>
-              <img src="./img/IMG_20231219_103633.jpg" alt="" style="max-width: 100%; max-height: 100%; ">
-              <h1 style="position: relative; z-index: +99;">Sosialisasi RW 09 Karang Pamulang</h1>  
-            </div>
-          </div>
-        </div>
-
-      </div>
 
       <!-- Akhir Kontner -->
-    </div>
+      <!-- Poto Galeri -->
+      <div class="qwerty container-fluid" id="qwerty">
+      <input type="radio" name="control" id="b1" checked>
+      <input type="radio" name="control" id="b2">
+      <input type="radio" name="control" id="b3">
+      <input type="radio" name="control" id="b4">
+      <input type="radio" name="control" id="b5">
+      <input type="radio" name="control" id="b6">
+      <input type="radio" name="control" id="b7">
+      <input type="radio" name="control" id="b8">
+      <input type="radio" name="control" id="b9">
+      <input type="radio" name="control" id="b10">
+      <div class="content">
 
+      
+        <div class="controls">
+          <label for="b1"></label>
+          <label for="b2"></label>
+          <label for="b3"></label>
+          <label for="b4"></label>
+          <label for="b5"></label>
+          <label for="b6"></label>
+          <label for="b7"></label>
+          <label for="b8"></label>
+          <label for="b9"></label>
+          <label for="b10"></label>
+        </div>
+        <div class="thumbnails">
+          <label for="b1"></label>
+          <label for="b2"></label>
+          <label for="b3"></label>
+          <label for="b4"></label>
+          <label for="b5"></label>
+          <label for="b6"></label>
+          <label for="b7"></label>
+          <label for="b8"></label>
+          <label for="b9"></label>
+          <label for="b10"></label>
+        </div>
+      </div>
+    </div>
+      <div class="firefox">
+        <span>Sorry, <code>:has()</code> is not supported by this browser.</span>
+      </div>
+
+</div>
     <!-- popup -->
     <!-- popup-ab -->
     <div class="modal fade" id="popup-ab" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="popup-ablabel" aria-hidden="true">
@@ -382,8 +415,7 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
-          
-
+        </div>
 
 
 
@@ -412,5 +444,9 @@
       AOS.init();
     </script>
     <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  </script>
   </body>
 </html>
