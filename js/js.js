@@ -24,4 +24,4 @@ const tilt = $('.js-tilt').tilt();
     $('.js-tilt').tilt({
       glare: true,
       maxGlare: .5
-    })
+    });

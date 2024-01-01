@@ -2,7 +2,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-image: url('../img/123.png'); /* Ganti dengan path gambar sesuai kebutuhan */
+  background-image: url('../img/photo\ full\ kiara.png'); /* Ganti dengan path gambar sesuai kebutuhan */
   background-size: cover; /* Untuk memastikan gambar latar belakang menutupi seluruh area */
   background-position: center;
   background-attachment: fixed;
@@ -409,7 +409,7 @@ label:before {
   transform: translateY(300%);
 	text-shadow: -1px -1px 0 #0007;
 	color:white;
-	font-size: 32px;
+	font-size: 28px;
 }
 
 .qwerty{
@@ -418,19 +418,13 @@ label:before {
   transition: background 0.5s ease 0s;
   border-radius: 10px;
 }
-.qwerty:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
+
 .qwerty:has(input#b1:checked):after {
 	content: "Sosialisasi RW 09 Karang Pamulang";
 }
 
 .qwerty:has(input#b2:checked):after {
-	content: "Sosialisasi Korban Bencana";
+	content: "Sosialisasi RW 09 Karang Pamulang";
 }
 
 .qwerty:has(input#b3:checked):after {
@@ -438,7 +432,7 @@ label:before {
 }
 
 .qwerty:has(input#b4:checked):after {
-	content: "Sosialisasi Korban Bencana Tertimpa Pohon Beringin";
+	content: "Sosialisasi RW 09 Karang Pamulang";
 }
 
 .qwerty:has(input#b5:checked):after {
@@ -446,23 +440,23 @@ label:before {
 }
 
 .qwerty:has(input#b6:checked):after {
-	content: "Sosialisasi Korban Bencana Tertimpa Pohon Beringin";
+	content: "Sosialisasi RW 09 Jatihandap";
 }
 
 .qwerty:has(input#b7:checked):after {
-	content: "Sosialisasi Korban Bencana";
+	content: "Sosialisasi RW 08 Cisaranten Kulon ";
 }
 
 .qwerty:has(input#b8:checked):after {
-	content: "Sosialisasi Korban Bencana Tertimpa Pohon Beringin";
+	content: "Sosialisasi RW 07 Ciumbuleuit ";
 }
 
 .qwerty:has(input#b9:checked):after {
-	content: "Sosialisasi RW 09 Karang Pamulang";
+	content: "Sosialisasi RW 01 Sukamiskin";
 }
 
 .qwerty:has(input#b10:checked):after {
-	content: "Sosialisasi Korban Bencana Tertimpa Pohon Beringin";
+	content: "Sosialisasi RW 01 Arcamanik";
 }
 
 
@@ -514,23 +508,23 @@ label:before {
 }
 
 .qwerty:has(input#b6:checked), .thumbnails label[for=b6] {
-	--img: url(https://cdn.josetxu.com/img/gp-clan-de-los-osos-pandemonium.jpg);
+	--img: url(/img/Photo\ Ke\ 1.jpg);
 }
 
 .qwerty:has(input#b7:checked), .thumbnails label[for=b7] {
-	--img: url(https://cdn.josetxu.com/img/gp-oscar-raul-hueco-hoces2.jpg);
+	--img: url(/img/Photo\ Ke\ 2.png);
 }
 
 .qwerty:has(input#b8:checked), .thumbnails label[for=b8] {
-	--img: url(https://cdn.josetxu.com/img/gp-me-pesa-hasta-el-aire-dehesilla.jpg);
+	--img: url(/img/Photo\ ke\ 3.jpeg);
 }
 
 .qwerty:has(input#b9:checked), .thumbnails label[for=b9] {
-	--img: url(https://cdn.josetxu.com/img/gp-diedro-mezquita.jpg);
+	--img: url(/img/Photo\ Ke\ 4.png);
 }
 
 .qwerty:has(input#b10:checked), .thumbnails label[for=b10] {
-	--img: url(https://cdn.josetxu.com/img/gp-biafra-hueso.jpg);
+	--img: url(/img/photo\ ke\ 5.png);
 }
 
 .thumbnails label:before { display: none; }
@@ -550,7 +544,26 @@ label:before {
 	opacity: 1;
 	box-shadow: 0 0 0.01vmin 0.5vmin #fff;
 }
-
+/* Timer */
+#timer {
+  list-style: none;
+  display: flex;
+  
+  }
+  
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    position: absolute;
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #001947;
+    color: #fff;
+    font-size: 24px;
+  }
 
 
 /* MEDIA QUERIES */
@@ -560,6 +573,18 @@ label:before {
 		font-size: 20px;
 		white-space: initial;
 	}
+  .qwerty:after {
+    content: "RW 09 Karang Pamulang";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -45vmin;
+    transform: translateY(100%);
+    text-shadow: -1px -1px 0 #0007;
+    color:white;
+    font-size: 18px;
+  }
+  
 }
 
 @media only screen and (max-width:580px) {
@@ -596,6 +621,8 @@ label:before {
 }
 
 
+
+
 /* Tablet */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .foto {
@@ -624,3 +651,32 @@ label:before {
 }
   
 }
+
+/* countdown */
+
+  #timer {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 6vh;
+    }
+    
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+      margin: 0 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #001947;
+      color: #fff;
+      font-size: 30px;
+      position: relative;
+    }
+ 
+    strong{
+      background-color: rgb(255, 255, 255);
+    }
+
+  
