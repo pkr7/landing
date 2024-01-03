@@ -2,7 +2,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background-image: url('../img/photo\ full\ kiara.png'); /* Ganti dengan path gambar sesuai kebutuhan */
+  background-image: url('../img/background.png'); /* Ganti dengan path gambar sesuai kebutuhan */
   background-size: cover; /* Untuk memastikan gambar latar belakang menutupi seluruh area */
   background-position: center;
   background-attachment: fixed;
