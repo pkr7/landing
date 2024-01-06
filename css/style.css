@@ -677,6 +677,18 @@ label:before {
  
     strong{
       background-color: rgb(255, 255, 255);
-    }
+    } 
+    
+    /* Tambahkan CSS styling untuk audio control */
+    #backgroundMusic {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px;  
+      text-align: center;
 
+    
+    }
   
